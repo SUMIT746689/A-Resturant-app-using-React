@@ -42,8 +42,10 @@ function History() {
     <div className={history_style.history_items_right}> 
         <Items  name='Cocktails' items={items[1]}/>
     </div>
-    <div>
-        <button> View More</button>
+    <div className={history_style.history_items_last}>
+        <div>
+            <button> View More</button>
+        </div>
     </div>
   </div>
 )}

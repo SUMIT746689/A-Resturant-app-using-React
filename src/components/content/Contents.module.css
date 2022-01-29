@@ -1,0 +1,200 @@
+.contents{
+    width: 100%;
+    display: grid;
+    color: var(--white_color);
+}
+.contents .contents_wellcome{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--dark_color);
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;   
+}
+.contents .contents_wellcome .wellcome_text{
+    background-color: var(--dark_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: fit-content;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.contents  top{
+    font-size: 1.3rem;
+    font-family: var(--font-base);
+    margin-bottom: 5px;
+}
+.contents img{
+    width: 45px;
+}
+
+.contents center{
+    text-align: left;
+    font-size:6rem ;
+    font-family: var(--font-base);
+    text-transform: uppercase;
+    color: var(--golden_color);
+    width: 100%;
+}
+.contents bottom{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    overflow-y:auto ;
+    font-weight: lighter;
+    line-height:1.7rem;
+    font-size: 0.95rem;
+}
+.contents .contents_wellcome .wellcome_text bottom{
+    padding-right: 20px;
+}
+.contents button{
+    width: 150px;
+    height: 50px;
+    font-family: var(--font-base);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--color-crimson);
+    border:none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.contents .contents_wellcome .wellcome_slide_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents .contents_wellcome .wellcome_image{
+    width: 50%;
+}
+
+.contents .about{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    margin:20px 0 ;
+}
+.contents .about .about_text_left, .about_text_right{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    text-align: right;
+    padding:5%;
+}
+
+
+.contents .about top{
+    font-size: 4rem;
+    color: var(--golden_color);
+}
+.contents .about center{
+    display: none;
+}
+.contents .about bottom{
+    max-width: 500px;
+}
+.contents .about .about_image{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents .about .about_image img{
+    height:910px ;
+    width: 109px;
+}
+
+.contents .about .about_text_right{
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contents .about .about_background{
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents .about .about_background img{
+    width:400px
+}
+
+.history{
+    background: var(--dark_color);
+}
+
+@media screen and (max-width:2100px) {
+    .contents .contents_wellcome .wellcome_image{
+        width: 75%;
+    }
+}
+
+@media  screen and (max-width:1150px) {
+    .contents .contents_wellcome{
+        grid-template-rows: auto auto;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contents .contents_wellcome .wellcome_text{
+        grid-row:1/2;
+        grid-column: 1/-1;
+    }
+    .contents .contents_wellcome .wellcome_slide_image{
+        grid-column: 1/-1;
+        width: 92%;
+        margin: 40px 4%;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+@media screen and (max-width:900px) {
+    .contents .about{
+        grid-template-columns: auto;
+        grid-row: auto auto auto;
+        grid-gap: 20px;
+    }
+    .contents .about .about_text_left{
+        grid-column: 1/-1;
+        grid-row:1/2;
+    }
+    .contents .about .about_image{
+        grid-column: 1/-1;
+        grid-row:2/3;
+    }
+    .contents .about .about_text_right{
+        grid-column: 1/-1;
+        grid-row:3/4;
+    }
+    .contents .about .about_background{
+        grid-column: 1/-1;
+        grid-row:1/4;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+   
+    .contents .about .about_background img{
+        width: 90%;
+    }
+
+}
+

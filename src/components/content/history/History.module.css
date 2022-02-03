@@ -39,6 +39,7 @@
 }
 .history_items_right{
     grid-area: r;
+    padding: 20px 20px;
 }
 .history_items_last{
     display: flex;
@@ -115,12 +116,20 @@
     'r'
     'b';
 }
+.history_items_image{
+    width:650px ;
+    height: 920px;
+    grid-area: c;
+}
+.single_items_title{
+    padding-top: 20px;
+}
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:700px) {
     .history_items_image{
         width:100% ;
-        height: fit-content;
+        
     }
     .history_items_image img{
         object-fit: cover;

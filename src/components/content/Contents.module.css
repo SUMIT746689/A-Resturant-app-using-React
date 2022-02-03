@@ -1,6 +1,7 @@
 .contents{
     width: 100%;
     display: grid;
+    height: 100%;
     color: var(--white_color);
 }
 .contents .contents_wellcome{
@@ -135,6 +136,10 @@
 .history{
     background: var(--dark_color);
 }
+.ChefWord{
+    margin: 0;
+    padding: 0;
+} 
 
 @media screen and (max-width:2100px) {
     .contents .contents_wellcome .wellcome_image{

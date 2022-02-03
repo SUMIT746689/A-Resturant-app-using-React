@@ -34,13 +34,13 @@ function History() {
         </div>       
     </div>
     <div className={history_style.history_items_left}>
-        <Items name='Wine & Beer' items={items[0]}/>
+        <Items key='Item_1' name='Wine & Beer' items={items[0]}/>
     </div>
     <div className={history_style.history_items_image} >
         <img src={menu_image} alt="menu_image"/>
     </div>
     <div className={history_style.history_items_right}> 
-        <Items  name='Cocktails' items={items[1]}/>
+        <Items key='Item_2'  name='Cocktails' items={items[1]}/>
     </div>
     <div className={history_style.history_items_last}>
         <div>

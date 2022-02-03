@@ -1,0 +1,114 @@
+.chefword_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+.chefword_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+}
+.chefword_image img{
+    width: 70%;
+}
+.chefword_latter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+.chefword_latter div{
+    padding: 10px;
+}
+.chefword_latter div .chefword_title{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    font-family: var(--font-base);
+}
+.chefword_latter div h1{
+    color:var(--golden_color);
+    font-family: var(--font-base);
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: bold;
+}
+.chefword_latter div .chefword_passage{
+    padding: 20px 0;
+}
+
+.chefword_latter div .chefword_passage div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-start;
+}
+.chefword_latter div .chefword_passage div img{
+    position: relative;
+    left: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.chefword_latter div .chefword_passage div p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.chefword_latter div .chefword_passage p{
+    line-height: 50px;
+    letter-spacing: 0.04rem;
+    font-family: var(--font-alt);
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 0;
+}
+.chefword_latter div .chefword_name{
+    color: var(--golden_color);
+    font-family: var(--font-base);
+}
+.chefword_latter div .chefword_position{
+    font-family: var(--font-alt);
+}
+.chefword_latter div .chefword_sign{
+    width:370px;
+    padding: 40px 0;
+}
+
+@media screen and (max-width:1950px) {
+    .chefword_latter div .chefword_passage p{
+        font-size: 16px;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .chefword_grid{
+        grid-template-columns: auto;
+        width:95%;
+        min-height: 100%;
+    }
+    .chefword_image{
+        padding: 60px 30px;
+    }
+    .chefword_image img{
+        width: 100%;
+        height: fit-content;
+    }
+    
+}
+@media screen and (max-width:650px) {
+
+    .chefword_latter div .chefword_sign{
+        width: 80%;
+    }
+    .chefword_latter div h1{
+        font-size: 45px;
+    }
+    .chefword_latter div .chefword_passage p{
+        font-size: 12px;
+        line-height:28px;
+        letter-spacing: 0.04rem;
+        text-transform: capitalize;
+    }
+}

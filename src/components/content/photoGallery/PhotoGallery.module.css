@@ -1,0 +1,70 @@
+.PhotoGallery_grid{
+    background: black;
+    min-height: 100vh;
+    grid-template-areas: 
+    'l'
+    'r';
+    padding: 40px;
+}
+.PhotoGallery_left{
+    grid-area: 'l';
+    padding: 50px 0;
+}
+.PhotoGallery_right{
+    grid-area: 'r';
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.PhotoGallery_name{
+    font-size: 1.1rem;
+    font-family: var(--font-base);
+    letter-spacing: 0.04rem;
+}
+.PhotoGallery_title{
+    font-size: 54px ;
+    font-family: var(--font-base);
+    letter-spacing: 0.04rem;
+    padding: 20px 0;
+    color:var(--color-golden);
+}
+.PhotoGallery_text{
+    letter-spacing: 0.04rem;
+    line-height: 2rem;
+    opacity: 0.8;
+}
+.PhotoGallery_right_left{
+    position: absolute;
+    left:0
+}
+.PhotoGallery_right_left div{
+    position: relative;
+    left:0;
+}
+.PhotoGallery_right_sliders{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.PhotoGallery_right_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.5s;
+}
+.PhotoGallery_right_slider img{
+    display: block;
+    width: 220px;
+    height: 327px;
+    transition: ease 0.2s;
+}
+
+.PhotoGallery_right_slider_instagram{
+    position: absolute;
+    opacity: 0.3;
+    width: 50px;
+    height: 50px;
+}

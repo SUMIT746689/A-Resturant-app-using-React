@@ -51,6 +51,28 @@
     align-items: center;
 }
 
+@media screen and (min-width:2000px) {
+    .contact_grid{
+        font-size: var(--font-lg);
+        line-height: 100px;
+    }
+    .left_name{
+        font-size: var(--font-name);
+        padding-top: 100px;
+    }
+    .left_title{
+        padding: 100px 0;
+        font-size: var(--font-xlg);
+    }
+    .left_opening{
+        padding: 30px 0;
+        font-size: var(--font-lg);
+    }
+    .contact_grid_right img{
+        max-width: 50%;
+    }
+}
+
 @media screen and (max-width:1150px) {
     .contact_grid{
         grid-template-areas:

@@ -10,6 +10,7 @@
     display:flex;
     color: white;
     background: var(--dark_color);
+    transition: ease 0.4s;
 }
 .head_content{
     display: flex;
@@ -110,10 +111,24 @@ li a{
 .responsive_Menu a:hover{
     color:var(--white_color);
 }
+@media screen and (min-width:2000px) {
+   
+    .brand{
+     
+        font-size:64px;
+    }
+    .menu{
+        font-size: var(--font-name);
+    }
+    .auth{
+        font-size: var(--font-name);
+    }
+}
 
 @media screen and (max-width:1190px) {
     .brand{
         width: 25%;
+        font-weight: 100;
     }
     .menu{
         display: none;

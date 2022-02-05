@@ -1,6 +1,7 @@
 .history_grid {
     display: grid;
     width: 100%;
+    min-height: 50vh;
     font-family: var(--font-base);
     margin: 50px 0;
     justify-content: center;
@@ -9,6 +10,7 @@
     'h h h'
     'l c r'
     'b b b';
+    
 }
 
 .history_head {
@@ -40,6 +42,7 @@
 .history_items_right{
     grid-area: r;
     padding: 20px 20px;
+
 }
 .history_items_last{
     display: flex;
@@ -61,7 +64,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 5%;
+    padding: 10px 2%;
 
 }
 
@@ -70,10 +73,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.single_items_body div{
-    padding: 0;
-    margin: 0;
-}
+
 .single_items_body div p{
     color : var(--color-grey);
     font-weight: 300;
@@ -104,6 +104,30 @@
 .single_items_price {
     margin-left: 10px;
     font-size: 1.5rem;
+}
+@media screen and (min-width:2000px) {
+    .history_head p {
+        font-size: var(--font-name);
+    }
+    .history_head h1 {
+        font-size: var(--font-xlg);
+    }
+    .history_items_image{
+        min-width: 880px;
+        min-height: 1260px;
+    }
+    .single_items_title {
+        font-size: var(--font-name);
+    }
+    .single_items_body div{
+        font-size: var(--font-lg);
+        max-width: 1000px;
+        min-width: 250px;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        letter-spacing: 0.1rem;
+    }
 }
 
 @media screen and (max-width:1150px) {

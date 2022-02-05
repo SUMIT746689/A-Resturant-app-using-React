@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
+    padding: 100px 0;
 }
 .chefword_image{
     display: flex;
@@ -60,7 +61,7 @@
     letter-spacing: 0.04rem;
     font-family: var(--font-alt);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 12px;
     margin-top: 0;
 }
 .chefword_latter div .chefword_name{
@@ -73,6 +74,36 @@
 .chefword_latter div .chefword_sign{
     width:370px;
     padding: 40px 0;
+}
+
+@media screen and (min-width:2000px) {
+    .chefword_latter div .chefword_title{
+        font-size: var(--font-name);
+    }
+    .chefword_latter div h1{
+        font-size: var(--font-xlg);
+        line-height: 200px;
+    }
+    
+    .chefword_latter div .chefword_passage p{
+        font-size: var(--font-lg);
+        line-height: 3rem;
+        max-width: 1200px;
+    }
+    .chefword_latter div .chefword_passage div img{
+        width: 70px;
+        margin-right: 10px;
+    }
+    .chefword_latter div .chefword_name{
+        font-size: var(--font-lg);
+    }
+    .chefword_latter div .chefword_position{
+        font-size: var(--font-name);
+    }
+    .chefword_latter div .chefword_sign{
+        min-width: 700px;
+        max-width: 800px;
+    }
 }
 
 @media screen and (max-width:1950px) {

@@ -8,7 +8,6 @@ import History from './history/History';
 import ChefWord from './chef_word/ChefWord';
 import Vedio from './vedio/Vedio';
 import Awards from './awards/Awards';
-import PhotoGallery from './photoGallery/PhotoGallery';
 import Contact from './contact/Contact';
 import Newsletter from './newsletter/Newsletter';
 

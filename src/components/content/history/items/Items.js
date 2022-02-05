@@ -6,7 +6,8 @@ function Items({name,items}) {
   <div>
       <div className={history_style.single_items_title}>{name}</div>
       <div>
-        {items.map((item,index)=>(<div key={index}  className={history_style.single_items_body}>
+        {items.map((item,index)=>(
+          <div key={index}  className={history_style.single_items_body}>
             <div  className={history_style.single_items_body_top}>
               <div className={history_style.single_items_names}>
                 <h3>{item.name}</h3>
@@ -22,7 +23,7 @@ function Items({name,items}) {
             <div>
               <p>{ item.origin}</p>
             </div>
-        </div>)
+          </div>)
         )}
 
       </div>

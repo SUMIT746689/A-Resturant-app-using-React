@@ -2,30 +2,28 @@
     width: 100%;
     display: grid;
     height: 100%;
-    color: var(--white_color);
+    color: var(--color-white);
+    letter-spacing: 0.04rem;
 }
 .contents .contents_wellcome{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: auto auto;
     background-color: var(--dark_color);
     justify-content: center;
     align-items:center;
-    margin-bottom: 20px;   
+    padding-bottom: 50px;
 }
 .contents .contents_wellcome .wellcome_text{
     background-color: var(--dark_color);
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
     text-align: left;
-    width: fit-content;
     margin-left: 5%;
     margin-bottom: 5%;
 }
-.contents  top{
+.contents .top{
     font-size: 1.3rem;
     font-family: var(--font-base);
     margin-bottom: 5px;
@@ -34,7 +32,7 @@
     width: 45px;
 }
 
-.contents center{
+.contents .center{
     text-align: left;
     font-size:6rem ;
     font-family: var(--font-base);
@@ -42,15 +40,17 @@
     color: var(--golden_color);
     width: 100%;
 }
-.contents bottom{
+.contents .bottom{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
     overflow-y:auto ;
     font-weight: lighter;
     line-height:1.7rem;
-    font-size: 0.95rem;
+    font-size: 1.3rem;
+    margin: 100px 0;   
+    padding: 0;
 }
-.contents .contents_wellcome .wellcome_text bottom{
+.contents .contents_wellcome .wellcome_text .bottom{
     padding-right: 20px;
 }
 .contents button{
@@ -78,6 +78,7 @@
     grid-template-columns: 40% 20% 40%;
     grid-template-rows: auto;
     margin:20px 0 ;
+    margin: 100px 0;
 }
 .contents .about .about_text_left, .about_text_right{
     grid-column: 1/2;
@@ -91,15 +92,16 @@
 }
 
 
-.contents .about top{
+.contents .about .top{
     font-size: 4rem;
     color: var(--golden_color);
 }
-.contents .about center{
+.contents .about .center{
     display: none;
 }
-.contents .about bottom{
+.contents .about .bottom{
     max-width: 500px;
+    
 }
 .contents .about .about_image{
     grid-column: 2/3;
@@ -141,9 +143,45 @@
     padding: 0;
 } 
 
-@media screen and (max-width:2100px) {
+@media screen and (min-width:2000px) {
     .contents .contents_wellcome .wellcome_image{
-        width: 75%;
+        padding: 0 50px;
+        min-width:1400px;
+        max-width:2000px;
+    }
+
+    .contents_wellcome .top{
+        font-size:var(--font-name)
+    }
+    .contents_wellcome .center{
+        font-size: var(--font-xlg);
+    }
+    .contents_wellcome .bottom{
+        font-size: var(--font-lg);
+        letter-spacing:0.2rem;
+        line-height: 3rem;
+        padding: 50px 0;
+        max-width: 1500px;
+    }
+    .contents .about{
+        padding: 100px 0;
+        letter-spacing: 0.1rem;
+    }
+    .contents .about .top{
+        font-size: var(--font-xlg);
+    }
+    .contents .about .bottom{
+        padding: 20px 0;
+        font-size: var(--font-lg);
+        line-height: 3rem;
+        font-weight: lighter;
+        max-width: 1200px;
+    }
+    .contents button{
+        width: 300px;
+        font-size: var(--font-name);
+        height: 100px;
+        letter-spacing: 0.1rem;
     }
 }
 
@@ -183,6 +221,7 @@
     .contents .about .about_image{
         grid-column: 1/-1;
         grid-row:2/3;
+        margin: 50px 0;
     }
     .contents .about .about_text_right{
         grid-column: 1/-1;
@@ -198,8 +237,7 @@
 @media screen and (max-width:750px) {
    
     .contents .about .about_background img{
-        width: 90%;
+        width: 300px;
     }
-
 }
 

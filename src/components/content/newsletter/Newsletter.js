@@ -27,7 +27,7 @@ function Newsletter() {
           <div>+1 212-344-1230 <br/>+1 212-555-1230</div>
         </div>
         <div className={Newsletter_style.footer_center}>
-          <img  src={gerich} alt='gerich'/>
+          <img className={Newsletter_style.footer_center_top} src={gerich} alt='gerich'/>
           <div className={Newsletter_style.footer_text}>"The Best Way To Find Yourself Is To Lose Yourself In The Service Of Others.”</div>
           <div>
             <img src={spoon} alt='spoon'/>

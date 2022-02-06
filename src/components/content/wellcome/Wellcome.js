@@ -1,5 +1,5 @@
 import React from 'react';
-import spoon from '../../../assets/spoon.svg'
+import spoon from '../../../assets/spoon.svg';
 import contents_styles from '../Contents.module.css'
 
 function Wellcome({title,button}) {

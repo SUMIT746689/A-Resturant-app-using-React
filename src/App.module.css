@@ -1,16 +1,11 @@
 :root{
-  
   width: 100%;
   height: 100%;
   background-image:url(./assets/bg.png);
   background-attachment: fixed;
-  background-position: center;
   object-fit: cover;
-  object-position: center;
   box-sizing: border-box;
-  background-origin: border-box;
   --golden_color:#DCCA87 ;
-  --white_color:white;
   --dark_color:black;
   --font-base: "Cormorant Upright",serif;
   --font-alt: "Open Sans",sans-serif;
@@ -20,5 +15,8 @@
   --color-crimson: #f5efdb;
   --color-grey: #aaa;
   --color-white: #fff;
+  --font-lg:30px;
+  --font-xlg:150px;
+  --font-name:37px;
 }
 

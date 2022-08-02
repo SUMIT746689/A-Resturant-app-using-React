@@ -5,6 +5,12 @@ import g from '../../assets/G.png';
 import contents_style from './Contents.module.css';
 import Wellcome from './wellcome/Wellcome';
 import History from './history/History';
+import ChefWord from './chef_word/ChefWord';
+import Vedio from './vedio/Vedio';
+import Awards from './awards/Awards';
+import PhotoGallery from './photoGallery/PhotoGallery';
+import Contact from './contact/Contact';
+import Newsletter from './newsletter/Newsletter';
 
 
 function Contents() {
@@ -37,6 +43,25 @@ function Contents() {
     <div className={contents_style.history}>
       <History/>
     </div>
+    <div className={contents_style.ChefWord}>
+      <ChefWord/>
+    </div>
+    <div className={contents_style.vedio} >
+      <Vedio/>
+    </div>
+    <div>
+      <Awards/>
+    </div>
+    <div>
+      <PhotoGallery/>
+    </div>
+    <div>
+      <Contact/>
+    </div>
+    <div>
+      <Newsletter/>
+    </div>
+    
   </div>
   )}
 

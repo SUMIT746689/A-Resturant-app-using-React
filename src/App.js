@@ -9,9 +9,10 @@ function App() {
       <header>
         <Header/>
       </header>
-      <contenting>
+      <div>
         <Contents/>
-      </contenting>
+      </div>
+      
       <footer>
 
       </footer>

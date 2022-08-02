@@ -6,18 +6,15 @@ import {IoMdPlay,IoMdPause} from 'react-icons/io';
 function Vedio() {
 
   const [press,setpress]=useState(false);
-  let videoRef = useRef();
+  let videoRef = useRef(null);
 
-  const vedioControl=(e)=>{
-    console.log(press);
-    if(!press){
+    const playFunction = ()=>{
       videoRef.current.play();
     }
-    else{
+    const pauseFunction = ()=>{
       videoRef.current.pause();
     }
-  }
-
+  
   return(
     <div className={vedio_style.videos} >
 
@@ -29,11 +26,11 @@ function Vedio() {
       />
 
       <div className={vedio_style.meal_vedio_icons}
-      onClick={()=>vedioControl(setpress(press=>!press))}
+      onClick={()=>setpress(press=>!press)}
       >
         <div>
           {
-            !press ? <IoMdPlay className={vedio_style.meal_vedio_playicon}  /> : <IoMdPause  className={vedio_style.meal_vedio_pauseicon}  />
+            !press ? <IoMdPlay onClick={playFunction} className={vedio_style.meal_vedio_playicon}  /> : <IoMdPause onClick={pauseFunction}  className={vedio_style.meal_vedio_pauseicon}  />
           }
         </div>
       </div>
